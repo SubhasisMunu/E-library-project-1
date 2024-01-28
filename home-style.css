@@ -1,0 +1,264 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.navigation-bar {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5vh;
+  background-color: #1e1e3f;
+}
+.navigation-bar a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.navigation-bar a:hover {
+  color: aliceblue;
+  text-decoration: underline;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#nav-menu {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav h1 {
+  color: #25265e;
+  margin: 0;
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #25265e;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #25265e;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #6501e5;
+}
+.activee {
+  color: crimson;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: aliceblue;
+  width: 95vw;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slideimg {
+  height: 250px;
+  width: 95vw;
+  filter: blur(1px);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#d2334 {
+  height: 250px;
+  width: 70vw;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.hed1 {
+  margin: 0;
+  padding: 30px 0 0 0;
+  color: darkslategray;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 550;
+  text-shadow: 2px 2px 5px grey;
+}
+
+.topic {
+  height: 250px;
+  width: 245px;
+  background-color: #6501e5;
+  background-color: #444;
+  color: #111;
+  display: inline-block;
+  text-align: center;
+}
+
+.img {
+  border: 1px solid black;
+}
+
+section {
+  width: 95vw;
+  margin: 5px auto;
+  padding: 70px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 70px 50px;
+}
+
+.desc {
+  font-family: sans-serif;
+  color: #25265e;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img:hover {
+  border: 2px solid blueviolet;
+  height: 250px;
+  width: 245px;
+}
+
+.topic:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* footer part codingg starts from here */
+footer {
+  height: 30vh;
+  color: rgb(150 161 192);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f1f1f1;
+  }
+  /* navigation bar responsive part */
+  #menu-icon {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+  }
+
+  ul.show {
+    display: flex;
+  }
+
+  li {
+    gap: 10px;
+    text-align: center;
+  }
+  li a:hover {
+    background-color: #25265e;
+    color: #6501e5;
+  }
+
+  .hed1 {
+    margin: 0;
+    padding: 30px 0 0 0;
+    color: darkslategray;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 550;
+    text-shadow: 2px 2px 5px grey;
+  }
+
+  section {
+    width: 100vw;
+    margin: 5px auto;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 70px 50px;
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-library | User login page</title>
+  <link rel="shotcut icon" href="icons8-book.gif" />
+    <style>
+      body {
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        backdrop-filter: blur(2px);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 60vw;
+        text-align: center;
+      }
+
+      .login-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+        color: #555;
+      }
+
+      .form-group input {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .form-group button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .extra-links {
+        margin-top: 10px;
+      }
+
+      .extra-links a {
+        display: block;
+        margin:10px 0 0 10px;
+        color: #007bff;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>User Login</h2>
+      <form class="login-form" onsubmit="submitForm(event)" action="" method="post">
+        <div class="form-group">
+          <label for="user-id">User ID:</label>
+          <input type="text" id="user-id" name="user-id"/>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-group">
+          <label for="college-roll">College Roll Number:</label>
+          <input type="text" id="college-roll" name="college-roll"/>
+        </div>
+        <div class="form-group">
+          <button type="submit" onclick="log.php" >Login </button>
+        </div>
+       
+      </form>
+
+      <div class="extra-links">
+        <a href="create acc.html" onclick="showCreateAccount()">Create a new account</a>
+        <a href="#" onclick="showForgotPassword()">Forgot Password</a>
+      </div>
+    </div>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+
+        // Retrieve form data
+        const userId = document.getElementById("user-id").value;
+        const password = document.getElementById("password").value;
+        const collegeRoll = document.getElementById("college-roll").value;
+
+        // You can perform further actions with the data, such as sending it to a server for authentication
+        console.log("User Login Details:", { userId, password, collegeRoll });
+
+        // Add any additional logic here (e.g., sending data to the server, redirecting, etc.)
+      }
+
+      function showCreateAccount() {
+        alert(
+          "Redirect to create account page or display a modal for account creation."
+        );
+        // Add logic to navigate to the create account page or show a modal
+      }
+
+      function showForgotPassword() {
+        alert(
+          "Redirect to forgot password page or display a modal for password recovery."
+        );
+        // Add logic to navigate to the forgot password page or show a modal
+      }
+    </script>
+  </body>
+</html>
