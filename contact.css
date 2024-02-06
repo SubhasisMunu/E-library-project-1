@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   color: #25265e;
 }
+
 #nav-menu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -48,6 +49,7 @@ li a {
 li a:hover {
   color: #6501e5;
 }
+
 .activee {
   color: crimson;
 }
@@ -57,23 +59,28 @@ li a:hover {
 
 .contact-section {
   width: 90vw;
+  height: 100vh;
   background-color: aliceblue;
   padding: 20px;
   margin: 2px auto;
 }
+
 .contact-details {
   /* text-align: center; */
   text-align: justify;
   font-size: 18px;
 }
+
 .conta {
   height: 150px;
   text-align: center;
   font-size: 18px;
 }
-img{
+
+img {
   padding: 3px;
 }
+
 img:hover {
   border-radius: 100%;
   background-color: rgb(150 161 192);
@@ -90,7 +97,7 @@ footer {
 }
 
 @media only screen and (max-width: 560px) {
- 
+
   /* navigation bar responsive part */
   #menu-icon {
     display: block;
@@ -115,6 +122,7 @@ footer {
     gap: 10px;
     text-align: center;
   }
+
   li a:hover {
     background-color: #25265e;
     color: #6501e5;
