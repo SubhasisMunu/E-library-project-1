@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .navigation-bar {
     width: 100vw;
     display: flex;
@@ -20,87 +21,62 @@ body {
     color: aliceblue;
     text-decoration: underline;
   }
-
-nav {
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  #nav-menu {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-nav h1 {
+  }
+  
+  nav h1 {
     color: #25265e;
     margin: 0;
-}
-
-#menu-icon {
+  }
+  
+  #menu-icon {
     display: none;
     cursor: pointer;
     font-size: 1.5em;
     color: #25265e;
-}
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-}
-
-li {
+  }
+  
+  li {
     margin-right: 20px;
-}
-
-li a {
+  }
+  
+  li a {
     text-decoration: none;
     color: #25265e;
     font-weight: 500;
     font-size: 1em;
     transition: color 0.3s ease;
-}
-
-li a:hover {
+  }
+  
+  li a:hover {
     color: #6501e5;
-}
-
-.activee {
+  }
+  .activee {
     color: crimson;
-}
-
-
-@media only screen and (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        top: 70px;
-        left: 0;
-        z-index: 1;
-    }
-
-    ul.show {
-        display: flex;
-    }
-
-    li {
-        gap: 10px;
-        text-align: center;
-    }
-
-    li a:hover {
-        background-color: #25265e;
-        color: #6501e5;
-    }
-
-}
+  }
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  h1 {
+    margin: 0%;
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: capitalize;
+  }
 
 
 .video-section {
