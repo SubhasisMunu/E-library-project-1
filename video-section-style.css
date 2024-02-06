@@ -157,13 +157,14 @@ iframe {
 }
 
 footer {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    bottom: 0;
-    width: 100%;
-}
+      margin: 0;
+      background-color: #1e1e3f;
+      /* background-color: #fafafa; */
+      color: rgb(150 161 192);
+      text-align: center;
+      padding: 20px;
+    }
+
 
 /* Media Queries for Responsive Design */
 
