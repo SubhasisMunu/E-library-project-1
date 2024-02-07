@@ -4,6 +4,7 @@ body {
     color: #25265e;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   .navigation-bar {
