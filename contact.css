@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #25265e;
+  overflow-x: hidden;
 }
 
 #nav-menu {
@@ -54,9 +55,6 @@ li a:hover {
   color: crimson;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-
 .contact-section {
   width: 90vw;
   height: 100vh;
@@ -66,18 +64,19 @@ li a:hover {
 }
 
 .contact-details {
-  /* text-align: center; */
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
 }
 
-.conta {
+.contact-media {
   height: 150px;
   text-align: center;
   font-size: 18px;
 }
 
 img {
+  height: 25px;
+  width: 25px;
   padding: 3px;
 }
 
@@ -86,14 +85,16 @@ img:hover {
   background-color: rgb(150 161 192);
 }
 
-
 footer {
-  /* width: 100%; */
-  color: rgb(150 161 192);
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0px;
+
+  margin: 0;
+    background-color: #1e1e3f;
+    width: 100%;
+    color: rgb(150 161 192);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0px;
 }
 
 @media only screen and (max-width: 560px) {
@@ -127,6 +128,4 @@ footer {
     background-color: #25265e;
     color: #6501e5;
   }
-
-
 }

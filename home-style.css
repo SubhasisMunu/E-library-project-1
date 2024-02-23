@@ -9,24 +9,25 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
 }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .navigation-bar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   background-color: #1e1e3f;
-}
-.navigation-bar a {
   color: aliceblue;
+}
+
+.under {
   text-decoration: none;
-}
-.navigation-bar a:hover {
+  text-transform: capitalize;
   color: aliceblue;
-  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 #nav-menu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -70,11 +71,10 @@ li a {
 li a:hover {
   color: #6501e5;
 }
+
 .activee {
   color: crimson;
 }
-
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .mySlides {
   display: none;
@@ -127,14 +127,6 @@ img {
   to {
     opacity: 1;
   }
-}
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-#d2334 {
-  height: 250px;
-  width: 70vw;
-  position: absolute;
-  top: 100px;
-  left: 200px;
 }
 
 .hed1 {
@@ -200,7 +192,9 @@ a {
 
 /* footer part codingg starts from here */
 footer {
-  height: 30vh;
+  margin: 0;
+  background-color: #1e1e3f;
+  width: 100%;
   color: rgb(150 161 192);
   text-align: center;
   padding: 20px;
@@ -212,6 +206,7 @@ footer {
   body {
     background-color: #f1f1f1;
   }
+
   /* navigation bar responsive part */
   #menu-icon {
     display: block;
@@ -236,6 +231,7 @@ footer {
     gap: 10px;
     text-align: center;
   }
+
   li a:hover {
     background-color: #25265e;
     color: #6501e5;

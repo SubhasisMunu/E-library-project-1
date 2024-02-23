@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Subhais sahoo" />
-  <title>E-library</title>
+  <title>E-library | Home</title>
   <link rel="shotcut icon" href="icons8-book.gif" />
   <link rel="stylesheet" href="home-style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,30 +14,31 @@
 <body>
   <header>
     <nav class="navigation-bar">
-      <a href="login Page library.html"><i class="fa fa-fw fa-user"></i></a>
-      <a href="login Page library.html">login&nbsp;|</a>
-      <a href="create acc.html" style="margin-right: 50px"> &nbsp;register</a>
+      <a href="" style="color: aliceblue;"><i class="fa fa-fw fa-user"></i></a>
+      <a class="under" href="logout.php">logout</a>
+      <a>|</a>
+      <a class="under" href="help.html">Help</a>
     </nav>
 
     <nav id="nav-menu">
       <h1>CodeVerse</h1>
       <div id="menu-icon">&#9776;</div>
       <ul>
-          <li><a href="home page.html" class="activee">Home</a></li>
-      <li><a href="books.html">Ebooks</a></li>
-      <li><a href="notes.html">Notes</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="questions.html">Questions</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
+        <li><a href="home page.html" class="activee">Home</a></li>
+        <li><a href="books.html">Ebooks</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="questions.html">Questions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
-  </nav>
+    </nav>
 
-  <script>
-      document.getElementById('menu-icon').addEventListener('click', function() {
-          document.querySelector('ul').classList.toggle('show');
+    <script>
+      document.getElementById('menu-icon').addEventListener('click', function () {
+        document.querySelector('ul').classList.toggle('show');
       });
-  </script>
+    </script>
 
     <div class="slideshow-container">
       <marquee behavior="scroll" direction="ltr">
@@ -70,30 +71,6 @@
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
-
-    <script>
-      let slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4500); // Change image every 4.5 seconds
-      }
-    </script>
   </header>
 
   <section>
@@ -138,10 +115,12 @@
   </section>
   <hr />
 
+  <!-- <hr /> -->
   <footer>
-    <p>&copy; 2023 subhasis</p>
-    <p>Contact: subhasissahoo9040@gmail.com</p>
+    <p>&copy; 2023 CodeVerse E-library</p>
+    <p>Contact: codeverse9040@gmail.com</p>
   </footer>
+  <script src="home-script.js"></script>
 </body>
 
 </html>

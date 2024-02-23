@@ -2,32 +2,28 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
-  /* background-color: #f1f1f1; */
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .navigation-bar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   background-color: #1e1e3f;
+  color: aliceblue;
 }
 
-.navigation-bar a {
-  color: aliceblue;
+.under {
   text-decoration: none;
-}
-
-.navigation-bar a:hover {
+  text-transform: capitalize;
   color: aliceblue;
-  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #nav-menu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -76,9 +72,6 @@ li a:hover {
   color: crimson;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-
 h1 {
   margin: 0%;
   padding: 20px 0px;
@@ -102,11 +95,9 @@ section {
 .notes-container {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px 10px;
-  /* margin: 40px 35px; */
   display: inline-block;
   border: 1px solid black;
-  /* border-radius: 15px 50px 15px 50px; */
-  border-radius: 10px;
+  border-radius: 15px 50px 15px 50px;
   font-size: 15px;
   height: 250px;
   width: 200px;
@@ -135,7 +126,6 @@ a {
 .download-buttons {
   display: block;
   margin-top: 10px;
-  /* border: 1px solid black; */
   border-radius: 20px;
   padding: 8px 1px;
   background-color: #8932d5;
@@ -155,16 +145,15 @@ a {
 }
 
 /* footer part codingg starts from here */
-
 footer {
   margin: 0;
-  background-color: #fafafa;
-  /* width: 100%; */
+  background-color: #1e1e3f;
+  width: 100%;
   color: rgb(150 161 192);
   text-align: center;
   padding: 20px;
-  /* position:fixed;
-    bottom: 0px; */
+  position: relative;
+  bottom: 0px;
 }
 
 @media only screen and (max-width: 560px) {
@@ -204,17 +193,6 @@ footer {
   }
 
   section {
-    /* background-color: aliceblue;
-    width: 80vw;
-    margin: 5px auto;
-    padding: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    gap: 40px; */
-
     width: 90vw;
     padding: 30px;
     margin: 5px auto;

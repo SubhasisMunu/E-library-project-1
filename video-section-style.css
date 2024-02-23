@@ -6,27 +6,24 @@ body {
   overflow-x: hidden;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .navigation-bar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   background-color: #1e1e3f;
+  color: aliceblue;
 }
 
-.navigation-bar a {
-  color: aliceblue;
+.under {
   text-decoration: none;
-}
-
-.navigation-bar a:hover {
+  text-transform: capitalize;
   color: aliceblue;
-  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #nav-menu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -75,8 +72,6 @@ li a:hover {
   color: crimson;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 h1 {
   margin: 0%;
   padding: 20px 0px;
@@ -99,7 +94,7 @@ h1 {
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
-  width: 300px;
+  width: 350px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -162,13 +157,16 @@ iframe {
   background-color: #2980b9;
 }
 
+/* footer part codingg starts from here */
 footer {
   margin: 0;
   background-color: #1e1e3f;
-  /* background-color: #fafafa; */
+  width: 100%;
   color: rgb(150 161 192);
   text-align: center;
   padding: 20px;
+  position: relative;
+  bottom: 0px;
 }
 
 /* Media Queries for Responsive Design */

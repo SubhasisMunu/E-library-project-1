@@ -4,24 +4,25 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .navigation-bar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   background-color: #1e1e3f;
-}
-.navigation-bar a {
   color: aliceblue;
+}
+
+.under {
   text-decoration: none;
-}
-.navigation-bar a:hover {
+  text-transform: capitalize;
   color: aliceblue;
-  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 #nav-menu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -65,11 +66,11 @@ li a {
 li a:hover {
   color: #6501e5;
 }
+
 .activee {
   color: crimson;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 h1 {
   margin: 0%;
   padding: 20px 0px;
@@ -77,45 +78,26 @@ h1 {
   text-transform: capitalize;
 }
 
-section {
+#hh {
+  font-size: 50px;
   background-color: aliceblue;
-  width: 90vw; /* Adjust width for smaller screens */
-  margin: 5px auto;
-  padding: 20px; /* Adjust padding */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; /* Change to column for smaller screens */
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px; /* Adjust gap */
+  padding: 100px;
 }
 
-.question-container {
-  background-image: url("5219070.jpg");
-  background-size: contain;
-  padding: 10px;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 20px;
-  height: 150px;
-  width: 150px;
-}
-a {
-  text-align: center;
-  text-decoration: none;
-}
-
+/* footer part codingg starts from here */
 footer {
   margin: 0;
-  background-color: #fafafa;
+  background-color: #1e1e3f;
+  width: 100%;
   color: rgb(150 161 192);
   text-align: center;
-  padding: 10px; /* Adjust padding for smaller screens */
+  padding: 20px;
+  position: relative;
+  bottom: 0px;
 }
 
-
 @media only screen and (max-width: 560px) {
- 
+
   /* navigation bar responsive part */
   #menu-icon {
     display: block;
@@ -140,6 +122,7 @@ footer {
     gap: 10px;
     text-align: center;
   }
+
   li a:hover {
     background-color: #25265e;
     color: #6501e5;

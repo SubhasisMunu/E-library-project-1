@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+            overflow-x: hidden;
         }
 
+        /* ////////////////////////////////////////////////////////// */
+        .navigation-bar {
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 5vh;
+            background-color: #1e1e3f;
+        }
+
+        .navigation-bar a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .navigation-bar a:hover {
+            color: aliceblue;
+            text-decoration: underline;
+        }
+
+        /* ////////////////////////////////////////////////////////// */
         nav {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 15px;
@@ -28,7 +55,7 @@
             display: none;
             cursor: pointer;
             font-size: 1.5em;
-            color:#25265e;
+            color: #25265e;
         }
 
         ul {
@@ -52,10 +79,11 @@
         }
 
         li a:hover {
-            color:#6501e5;
+            color: #6501e5;
         }
-        .activee{
-            color:crimson;
+
+        .activee {
+            color: crimson;
         }
 
 
@@ -67,7 +95,7 @@
             ul {
                 display: none;
                 flex-direction: column;
-                width: 100%;
+                width: 100vw;
                 background-color: rgba(255, 255, 255, 0.9);
                 position: absolute;
                 top: 70px;
@@ -80,36 +108,105 @@
             }
 
             li {
-               gap: 10px;
+                gap: 10px;
                 text-align: center;
             }
+
             li a:hover {
                 background-color: #25265e;
-                color:#6501e5;
+                color: #6501e5;
             }
-            
+
+        }
+
+        .simantic-tags {
+            margin: 0;
+            padding: 50px;
+
+        }
+
+        main {
+            background: linear-gradient(lightskyblue, hotpink, crimson);
+            margin: 0;
+            padding: 50px;
+        }
+
+        section {
+            background-color: lightskyblue;
+        }
+
+        article {
+            background-color: hotpink;
+        }
+
+        aside {
+            background-color: crimson;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            color: black;
+            text-transform: capitalize;
+        }
+
+        footer {
+            margin: 0;
+            background-color: #fafafa;
+            color: rgb(150 161 192);
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
-<body>
-    <nav id="nav-menu">
-        <h1>CodeVerse</h1>
-        <div id="menu-icon">&#9776;</div>
-        <ul>
-            <li><a href="home page.html" class="activee">Home</a></li>
-        <li><a href="books.html">Ebooks</a></li>
-        <li><a href="notes.html">Notes</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="questions.html">Questions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
 
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            document.querySelector('ul').classList.toggle('show');
-        });
-    </script>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <a href="login Page library.html"><i class="fa fa-fw fa-user"></i></a>
+            <a href="login Page library.html">login&nbsp;|</a>
+            <a href="create acc.html" style="margin-right: 50px"> &nbsp;register</a>
+        </nav>
+
+        <nav id="nav-menu">
+            <h1>CodeVerse</h1>
+            <div id="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="books.html">Ebooks</a></li>
+                <li><a href="notes.html" class="activee">Notes</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="questions.html">Questions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            document.getElementById('menu-icon').addEventListener('click', function () {
+                document.querySelector('ul').classList.toggle('show');
+            });
+        </script>
+    </header>
+
+    <main>
+        <h1>main</h1>
+        <section class="simantic-tags">
+            <h1>section</h1>
+        </section>
+        <article class="simantic-tags">
+            <h1>article</h1>
+        </article>
+        <aside class="simantic-tags">
+            <h1>aside</h1>
+        </aside>
+    </main>
+
+    <footer>
+        <h1>footer</h1>
+        <p>&copy; 2023 subhasis</p>
+        <p>Contact: subhasissahoo9040@gmail.com</p>
+    </footer>
 </body>
+
 </html>
