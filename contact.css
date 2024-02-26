@@ -88,13 +88,13 @@ img:hover {
 footer {
 
   margin: 0;
-    background-color: #1e1e3f;
-    width: 100%;
-    color: rgb(150 161 192);
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0px;
+  background-color: #1e1e3f;
+  width: 100%;
+  color: rgb(150 161 192);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0px;
 }
 
 @media only screen and (max-width: 560px) {
@@ -118,7 +118,6 @@ footer {
   ul.show {
     display: flex;
   }
-
   li {
     gap: 10px;
     text-align: center;
